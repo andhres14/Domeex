@@ -67,3 +67,6 @@ Route::get('maps', function(){
 Route::get('users/{id}', function() {
     //
 });
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
